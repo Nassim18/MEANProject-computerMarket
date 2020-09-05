@@ -1,0 +1,10 @@
+[
+    {"email":"jasmine.aissa@yahoo.fr", 
+      "produit": [
+      {"id":"R1","nom":"RAM 4GB", "type":"RAM", "prix":30, "marque": "TOSHIBA", "img":"https://pics.crucial.com/wcsstore/CrucialSAS/images/resources/medium/package/204-pinsodimmddr3.png","quantite":3},
+      {"id":"M1","nom":"Ecran LED", "type":"Moniteur", "prix":150,  "marque": "DELL", "img":"https://images-na.ssl-images-amazon.com/images/I/71YnLvKtbBL._SX425_.jpg","quantite":2}
+
+
+    ]
+  }
+]

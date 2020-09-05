@@ -1,0 +1,9 @@
+[
+
+	{"nom":"Amireche", "prenom":"Fadi", "email":"fadi.amireche@yahoo.fr", "sexe":"homme", "password":"123456"},
+	{"nom":"Ghiat", "prenom":"Mouad", "email":"mouad.ghiat@yahoo.fr", "sexe":"homme", "password":"abcdef"},
+	{"nom":"Bouzenada", "prenom":"Abdelbaki", "sexe":"homme", "email":"abdelbaki.bouzenada@yahoo.fr", "password":"789ghi"},
+	{"nom":"Aissa", "prenom":"Jasmine", "email":"jasmine.aissa@yahoo.fr", "sexe":"femme", "password":"123jkl"},
+	{"nom":"Kireche", "prenom":"Sarah", "email":"sarah.kireche@yahoo.fr", "sexe":"femme", "password":"456mno"}
+
+]

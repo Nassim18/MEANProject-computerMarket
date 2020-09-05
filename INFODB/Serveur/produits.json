@@ -1,0 +1,23 @@
+[
+    {"id":"R1","nom":"RAM 4GB", "type":"RAM", "prix":30, "marque": "TOSHIBA", "img":"https://pics.crucial.com/wcsstore/CrucialSAS/images/resources/medium/package/204-pinsodimmddr3.png"},
+    {"id":"R2","nom":"RAM 8GB", "type":"RAM", "prix":50,  "marque": "KINGSTON", "img":"https://pics.crucial.com/wcsstore/CrucialSAS/images/resources/medium/package/204-pinsodimmddr3.png"},
+    {"id":"R3","nom":"RAM 16GB", "type":"RAM", "prix":50,  "marque": "BROTHER", "img":"https://pics.crucial.com/wcsstore/CrucialSAS/images/resources/medium/package/204-pinsodimmddr3.png"},  
+    {"id":"D1","nom":"WD-HDD 2TO", "type":"Disque dur", "prix":250,  "marque": "WD", "img":"https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,h_393,q_auto,w_700/c_pad,h_393,w_700/F6918171-01?pgw=1"},
+    {"id":"D2","nom":"PHILIPS-SDD 128GB", "type":"Disque dur", "prix":300,  "marque": "PHILIPS", "img":"https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,h_393,q_auto,w_700/c_pad,h_393,w_700/F6918171-01?pgw=1"},
+    {"id":"D3","nom":"SAMSUNG-SDD 512GB", "type":"Disque dur", "prix":500,  "marque": "SAMSUNG", "img":"https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,h_393,q_auto,w_700/c_pad,h_393,w_700/F6918171-01?pgw=1"},
+    {"id":"M1","nom":"Ecran LED", "type":"Moniteur", "prix":150,  "marque": "DELL", "img":"https://images-na.ssl-images-amazon.com/images/I/71YnLvKtbBL._SX425_.jpg"},
+    {"id":"M2","nom":"Ecran LCD", "type":"Moniteur", "prix":160,  "marque": "LG", "img":"https://images-na.ssl-images-amazon.com/images/I/71YnLvKtbBL._SX425_.jpg"},
+    {"id":"M3","nom":"Ecran HD", "type":"Moniteur", "prix":170,  "marque": "SAMSUNG", "img":"https://images-na.ssl-images-amazon.com/images/I/71YnLvKtbBL._SX425_.jpg"},
+    {"id":"C1","nom":"Intel HD Graphics Family", "type":"Carte graphique", "prix":120,  "marque": "DELL", "img":"https://www.es-france.com/4917-large_default/carte-graphique-performance-pci-express-20-x16-n720c-e8fl.jpg"},
+    {"id":"C2","nom":"AMD Radeon RX 580", "type":"Carte graphique", "prix":150,  "marque": "DELL", "img":"https://www.es-france.com/4917-large_default/carte-graphique-performance-pci-express-20-x16-n720c-e8fl.jpg"},
+    {"id":"C3","nom":"NVIDIA Geforce GT 980M", "type":"Carte graphique", "prix":200,  "marque": "DELL", "img":"https://www.es-france.com/4917-large_default/carte-graphique-performance-pci-express-20-x16-n720c-e8fl.jpg"},
+    {"id":"I1","nom":"ZEBRA ZE 500", "type":"Imprimante", "prix":80,  "marque": "ZEBRA", "img":"https://media.ldlc.com/r1600/ld/products/00/04/64/71/LD0004647191_2.jpg"},
+    {"id":"I2","nom":"Canon PIXMA MG", "type":"Imprimante", "prix":65,  "marque": "CANON", "img":"https://media.ldlc.com/r1600/ld/products/00/04/64/71/LD0004647191_2.jpg"},
+    {"id":"I3","nom":"Brother MFC", "type":"Imprimante", "prix":95,  "marque": "BROTHER", "img":"https://media.ldlc.com/r1600/ld/products/00/04/64/71/LD0004647191_2.jpg"},
+    {"id":"P1","nom":"Intel(R) Core(TM) i3", "type":"Processeur", "prix":350,  "marque": "INTEL", "img":"https://www.pcgamer.fr/wp-content/uploads/2019/05/comparatif-processeur-gamer.jpg"},
+    {"id":"P2","nom":"AMD Ryzen 5", "type":"Processeur", "prix":450,  "marque": "AMD", "img":"https://www.pcgamer.fr/wp-content/uploads/2019/05/comparatif-processeur-gamer.jpg"},
+    {"id":"P3","nom":"MSI B450M", "type":"Processeur", "prix":500,  "marque": "MSI", "img":"https://www.pcgamer.fr/wp-content/uploads/2019/05/comparatif-processeur-gamer.jpg"},
+    {"id":"S1","nom":"Synaptics PS2", "type":"Souris", "prix":45,  "marque": "HP", "img":"https://www.bigpc.fr/875-large_default/souris-pc-the-g-lab-kult-200.jpg"},
+    {"id":"S2","nom":"Synaptics PS1", "type":"Souris", "prix":30,  "marque": "ACER", "img":"https://www.bigpc.fr/875-large_default/souris-pc-the-g-lab-kult-200.jpg"},
+    {"id":"S3","nom":"Synaptics PS3", "type":"Souris", "prix":20,  "marque": "LENOVO", "img":"https://www.bigpc.fr/875-large_default/souris-pc-the-g-lab-kult-200.jpg"}
+]
