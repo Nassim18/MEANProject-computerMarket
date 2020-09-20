@@ -1,0 +1,53 @@
+<!-- <p>Login</p>
+<body>
+<form (ngSubmit)= "onSubmit()"#inscriptionForm ="ngForm" >
+  
+<label> Email </label><br>
+<input type="text"   name="email"/>
+<br><br>
+<label> Mot de passe </label><br>
+<input type="password"   name="password"/>
+<br><br>
+<input type="submit" value="s'authentifier" />
+
+</form>
+</body>
+<p>{{message}}</p> -->
+
+<div *ngIf="!isConnect">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="https://community.jaguar-network.com/wp-content/uploads/2019/03/ssh.png" id="icon" alt="User Icon" />
+      <h1>Authentification</h1>
+    </div>
+
+    <!-- Login Form -->
+    <form (ngSubmit)= "onSubmit()"#inscriptionForm ="ngForm">
+      <input type="text" id="email" class="fadeIn second" name="email" placeholder="email..." required [(ngModel)] ="utilisateur['email']" >
+      <br><br>
+      <input type="password" id="password" class="fadeIn third" name="password" placeholder="password..." required [(ngModel)] ="utilisateur['password']">
+      <br><br>
+      <input type="submit" class="fadeIn fourth" value="Se connecter">
+      <br><br>
+    </form>
+
+  </div>
+  
+    <app-menu *ngIf="isConnect"></app-menu>
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" routerLink="/">Go to the Site</a>
+    </div>
+
+  </div>
+</div>
+<!-- <p>{{message}}</p> -->

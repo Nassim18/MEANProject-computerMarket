@@ -1,0 +1,55 @@
+
+        <div class="col-12">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col"> </th>
+                            <th scope="col">Product</th>
+                            <th scope="col">Brand</th>
+                            <th scope="col" class="text-center">Quantity</th>
+                            <th scope="col" class="text-right">Price</th>
+                            <th scope="col" class="text-right">Action</th>
+                            <th> </th>
+                        </tr>
+                    </thead>
+                    <tbody *ngFor="let produit of panier">
+                        <tr>
+                            <td><img src={{produit.img}} class="img-thumbnail img-sm"></td>
+                            <td>{{produit.nom}}</td>
+                            <td>{{produit.marque}}</td>
+                            <td class="text-right">{{produit.quantite}}</td>
+                            <td class="text-right">{{produit.prix}} €</td>
+                            <td class="text-right">Remove the product <button class="btn btn-sm btn-danger"(click)= "supprimerProduit(produit.img, produit.nom, produit.marque, produit.prix)"><i class="fa fa-trash"></i> </button> </td>
+                        </tr>
+                       
+                       
+                       
+                    </tbody>
+                     <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><strong>Total</strong></td>
+                            <td class="text-right"><strong>{{ getTotal() }} €</strong></td>
+                        </tr>
+                </table>
+            </div>
+        </div>
+        <div class="col mb-2">
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-sm-12  col-md-6">
+                    <button class="btn btn-block btn-light" routerLink="/menu">Retourner à l'acceuil</button>
+                </div>
+                
+                <div class="col-sm-12 col-md-6 text-right">
+                    <button class="btn btn-lg btn-block btn-success text-uppercase" >Valider l'achat</button>
+                </div>
+            </div>
+        </div>
+
+
+

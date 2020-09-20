@@ -1,0 +1,70 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+
+<div class="container">
+		
+				
+					<br>  <b><h2 class="text-center">  Catalog of All Our Products ! </h2></b>
+					<hr>
+				
+				<br><br>
+			
+
+<div class="card" >
+<table class="table table-hover shopping-cart-wrap">
+<thead class="text-muted">
+<tr>
+  <th scope="col">Product</th>
+  <th scope="col" width="120">Brand</th>
+   <th scope="col" width="120">Price</th>
+   <th *ngIf="isConnected" scope="col" width="120">Quantity</th>
+  <th *ngIf="isConnected" scope="col" width="200" class="text-right">Action</th>
+</tr>
+</thead>
+<tbody *ngFor="let produit of produits">
+	
+	<tr>
+		<td>
+	<figure class="media" >
+		<div class="img-wrap"><img src= {{produit.img}} class="img-thumbnail img-sm"></div>
+		<figcaption class="media-body">
+			<h6 class="title text-truncate"> {{produit.nom}} </h6>
+			
+		</figcaption>
+	</figure> 
+	<td> 
+		<div class="price-wrap"> 
+			<var class="price">	{{produit.marque}} </var> 
+		</div> <!-- brand-wrap .// -->
+	</td>
+	<td> 
+		<div class="price-wrap"> 
+			<var class="price">USD	{{produit.prix}} $</var> 
+			<small class="text-muted">(For 1 quantity)</small> 
+		</div> <!-- price-wrap .// -->
+	</td>
+	<td> 
+		<div class="price-wrap"> 
+			<input *ngIf="isConnected" class="form-control" type="number" required (click)="updateQuantite($event.target.value)" min="1" max="20"/> 
+		</div> <!-- quantity-wrap .// -->
+	</td>
+		<td class="text-right" > 
+		<a *ngIf="isConnected" title="" (click)= "ajouterAuPanier(produit.img, produit.nom, produit.marque, produit.prix)" class="btn btn-outline-success" data-toggle="tooltip" data-original-title="Save to Wishlist" > <i class="fa fa-heart" ></i> Add to cart</a> 
+		</td>
+	</tr>
+	<tr>
+</tbody>
+</table>
+</div> <!-- card.// -->
+
+</div> 
+<!--container end.//-->
+  
+
+     
+   

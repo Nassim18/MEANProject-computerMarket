@@ -1,0 +1,56 @@
+                        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+                        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+                        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                        <!------ Include the above in your HEAD tag ---------->
+                        
+                        <div class="container-fluid bg-light ">
+                            <div class="row align-items-center justify-content-center">
+                                    <label class ="decaller"for="filter"><b>Filter by Category</b></label>
+                                    
+                                    <label for="filter">Low Price</label>
+                                                <div class="col-md-2 pt-3">
+                                                   <div class="form-group ">
+                                                      
+                                                      <select id="prixmin" class="form-control">
+                                                            <option value="*"  (click)= updatePrixMin($event.target.value) selected="selected"> Aucun</option>
+                                                        <option placeholder="Low Price" 
+                                                        (click)= updatePrixMin($event.target.value)  value="{{p}}" *ngFor="let p of prix">{{p}}</option>
+                                                        
+                                                      </select>
+                                                   </div>
+                                                </div>
+                                                <label for="filter">Hight Price</label>
+                                                <div class="col-md-2 pt-3" >
+                                                    <div class="form-group" >
+                                                      
+                                                      <select id="prixmax" class="form-control" >
+                                                          <option value="*"   (click)= updatePrixMax($event.target.value) selected="selected" > Aucun</option>
+                                                            <option placeholder="Hight Price" 
+                                                            (click)= updatePrixMax($event.target.value) value="{{p}}" *ngFor="let p of prix">{{p}}</option>
+                                                        <option placeholder="Hight Price" 
+                                                        (click)= updatePrixMax($event.target.value) value="{{p}}" *ngFor="let p of prix">{{p}}</option>
+                                                        
+                                                      </select>
+                                                    </div>
+                                                </div>
+                                                <label for="filter">Category</label>
+                                                <div class="col-md-2 pt-3">
+                                                    <div class="form-group">
+                                                      <select id="categorie" class="form-control" >
+                                                            <option value="*"  (click)= updateCategorie($event.target.value) selected="selected"> Aucun</option>
+                                                        <option placeholder="Category" 
+                                                        (click)= updateCategorie($event.target.value) value="{{categorie}}" *ngFor="let categorie of categorie">{{categorie}}</option>
+                                                        
+                                                      </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                   <button type="submit" class="btn btn-primary btn-block" 
+                                                   (click)="produitsParPrix(CategorieSelectione,prixmax,prixmin)">Search..</button>
+                                                </div>
+                                            </div>
+                        </div>
+                        
+                        
+                        
+                    

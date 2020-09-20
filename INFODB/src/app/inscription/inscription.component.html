@@ -1,0 +1,61 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+            <form class="form-horizontal" role="form">
+                <h2>Registration</h2>
+                <div class="form-group">
+                    <label for="nom" class="col-sm-3 control-label">Nom</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="nom" placeholder="Nom.." class="form-control" autofocus required (input)="updateNom($event.target.value)">
+                        <!-- <span class="help-block">Last Name, First Name, eg.: Smith, Harry</span> -->
+                    </div>
+                </div>
+                <div class="form-group">
+                        <label for="prenom" class="col-sm-3 control-label">Prénom</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="prenom" placeholder="Prénom.." class="form-control" autofocus required (input)="updatePrenom($event.target.value)">
+                            <!-- <span class="help-block">Last Name, First Name, eg.: Smith, Harry</span> -->
+                        </div>
+                    </div>
+                <div class="form-group">
+                    <label for="email" class="col-sm-3 control-label">Email</label>
+                    <div class="col-sm-9">
+                        <input type="email" id="email" placeholder="Email.." class="form-control" required (input)="updateEmail($event.target.value)">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label">Password</label>
+                    <div class="col-sm-9">
+                        <input type="password" id="password" placeholder="Password.." class="form-control" required (input)="updatePassword($event.target.value)">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="sexe" class="col-sm-3 control-label">Sexe</label>
+                    <div class="col-sm-9">
+                        <select id="country" class="form-control" required (click)="updateSexe($event.target.value)">
+                            <option >Aucun</option>
+                            <option >Homme</option>
+                            <option>Femme</option>
+                        </select>
+                    </div>
+                </div> <!-- /.form-group -->
+               
+              
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                            <button type="reset" class="btn btn-success btn-info btn-block" >Reset</button> 
+                    </div>
+                    <br>
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <button type="submit" class="btn btn-success btn-block" routerLink="/" (click)= "Inscription()">Register</button>
+                        
+                    </div>
+                    <br>
+                    
+                </div>
+            </form> <!-- /form -->
+        </div> <!-- ./container -->
